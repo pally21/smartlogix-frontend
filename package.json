@@ -1,0 +1,62 @@
+{
+  "name": "@smartlogix/frontend",
+  "version": "1.0.0",
+  "description": "Interfaz de usuario para el sistema de gestión logística SmartLogix",
+  "keywords": [
+    "smartlogix",
+    "logística",
+    "inventario",
+    "react",
+    "frontend"
+  ],
+  "author": "SmartLogix Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartlogix/smartlogix-frontend.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "public",
+    "index.html",
+    "vite.config.js",
+    "README.md"
+  ],
+  "main": "dist/index.html",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
+    "axios": "^1.6.5",
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^3.0.6",
+    "recharts": "^2.10.3",
+    "react-hot-toast": "^2.4.1"
+  },
+  "devDependencies": {
+    "vite": "^5.0.11",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vitest": "^1.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/user-event": "^14.4.3"
+  },
+  "scripts": {
+    "start": "vite --host 0.0.0.0 --port 3000",
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pack": "npm run build && npm pack"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}

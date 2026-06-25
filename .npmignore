@@ -1,0 +1,10 @@
+# Ignorar en publicación NPM
+node_modules/
+Dockerfile
+nginx-frontend.conf
+.env
+.env.*
+
+# Archivos de desarrollo
+*.log
+.DS_Store
